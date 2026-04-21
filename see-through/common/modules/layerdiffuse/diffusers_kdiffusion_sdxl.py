@@ -117,7 +117,7 @@ class KDiffusionStableDiffusionXLPipeline(StableDiffusionXLImg2ImgPipeline):
                     "zero": (DPMSolverSinglestepScheduler, {"use_karras_sigmas": True, **config_zero}),
                 },
             }
-            model_id = "frankjoshua/juggernautXL_version6Rundiffusion"
+            model_id = "/workspace/ComfyUI/models/SeeThrough/seethroughv0.0.2_layerdiff3d"
             scheduler_name = "DPMPP_2M_SDE"
             scheduler_config_name = "zero"
             scheduler_configs = schedulers[scheduler_name]
